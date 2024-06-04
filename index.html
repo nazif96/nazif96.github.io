@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html lang = "fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Zifou</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Personnelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border: 1px solid #333;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .content {
+            padding: 20px 0;
+        }
+        .bio, .portfolio {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenue sur ma Page Personnelle</h1>
+            <p>Data Science & Portfolio</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#bio">Biographie</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container content">
+        <section id="bio" class="bio">
+            <h2>Biographie</h2>
+            <p>Passionné de data science, j'aime explorer les données et en extraire des informations précieuses. Avec une solide expérience en analyse de données, en apprentissage automatique et en programmation, je m'efforce de résoudre des problèmes complexes à l'aide de méthodes quantitatives avancées.</p>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Voici quelques-uns de mes projets récents en data science :</p>
+            <ul>
+                <li><strong>Projet 1 :</strong> Analyse prédictive des ventes utilisant le machine learning</li>
+                <li><strong>Projet 2 :</strong> Visualisation interactive des données de santé publique</li>
+                <li><strong>Projet 3 :</strong> Modélisation des tendances du marché financier avec des réseaux neuronaux</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Pour plus d'informations ou pour discuter d'une opportunité, vous pouvez me contacter via les réseaux sociaux suivants :</p>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                <li><a href="mailto:email@example.com">Email</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ma Page Personnelle. Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
+
